@@ -52,22 +52,24 @@ body {
 
 
 /**************************************
-	Content styles
+  Content stylo
+  
 **************************************/
 
 @media (min-width: 600px) {
 
-section.content h2 { font-size: 42px; }
+section.content2 { font-size: 42px; }
 
 section.content p { font-size: 20px; }
 }
 
-section.content { padding: 40px 0; }
+section.content { padding: 0px 0; }
 
-section.content h2 {
-  margin-bottom: 40px;
+section.content2 {
+  margin-bottom: 0px;
   font-family: "Roboto Slab", serif;
   font-size: 30px;
+  background-color: #0277c4;
 }
 
 section.content p {
@@ -79,7 +81,7 @@ section.content p {
 section.content p:last-child { margin-bottom: 0; }
 
 /**************************************
-	Parralax styles
+	Parralax stylo
 **************************************/
 
 section.parallax {
@@ -216,4 +218,123 @@ p {
 
 /**************************************
 Einde Footer
+**************************************/
+
+
+/**************************************
+Begin Meet the Team
+**************************************/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,500,700&subset=latin-ext');
+* {
+  font-family: Verdana, Arial, Tahoma, Serif;
+  box-sizing: border-box;
+}
+
+.team {
+  padding: 0px 0;
+  text-align: center;
+  background-color:#0e3e98;
+}
+
+.team h2 {
+  font-size: 37px;
+  line-height: 1.66667;
+  font-weight: 500;
+  color: #bbf9ac;
+text-transform: capitalize;
+letter-spacing: .024em;
+word-spacing: .05em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.team-classic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  margin: 0px 0;
+}
+
+.team-classic article {
+  width: 25%;
+  max-width: 420px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-classic article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all .3s ease;
+}
+
+.team-classic article:hover img {
+  filter: grayscale(0);
+ }
+
+.team-classic article .caption {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  width: 80%;
+min-width: 300px;
+  transition: all .3s ease;
+z-index: 1;
+  bottom: 10%;
+  padding: 15px 6% 15px 18%;
+  margin-left: -30px;
+}
+
+
+
+.team-classic article .caption::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.5);
+    transform: skew(10deg);
+    transform-origin: 50% 100%;
+    z-index: -1;
+}
+
+
+.team-classic article:hover .caption {
+  margin-left: 0;
+ }
+
+.team-classic .team-classic-name {
+  font-size: 21px;
+  line-height: 1.71429;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: capitalize;
+  letter-spacing: .024em;
+  word-spacing: .05em;
+}
+
+.team-classic .team-classic-status  {
+  line-height: 1.5;
+  color: #ffffff;
+  letter-spacing: .025em;
+  font-weight: 400;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+
+/**************************************
+Einde Meet the Team
 **************************************/
